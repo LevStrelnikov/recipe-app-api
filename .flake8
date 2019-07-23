@@ -4,5 +4,5 @@ exclude =
   __pycache__,
   manage.py,
   apps/settings.py,
-  settings.py,
+  *settings.py*,
   virtual
