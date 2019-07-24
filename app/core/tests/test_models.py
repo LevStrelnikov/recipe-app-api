@@ -23,7 +23,7 @@ class ModelTests(TestCase):
 
         user = get_user_model().objects.create_user(
             email=email,
-            password=password
+            password=password,
         )
         email_name, domain_part = email.strip().rsplit('@', 1)
         normalized_email = email_name + '@' + domain_part.lower()
